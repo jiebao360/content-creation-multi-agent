@@ -1,8 +1,8 @@
-# 🦐 内容生成多 Agent 系统 v4.0.5
+# 🦐 内容生成多 Agent 系统 v4.0.6
 
-> 商用级内容生成全流程系统 - 智能配置助手
+> 商用级内容生成全流程系统 - 电商 Seedance 提示词技能
 
-**版本**: v4.0.5 (智能配置版)  
+**版本**: v4.0.6 (电商提示词版)  
 **创建时间**: 2026-03-17  
 **作者**: OpenClaw 来合火  
 **GitHub**: https://github.com/jiebao360/content-creation-multi-agent  
@@ -320,6 +320,51 @@ bash scripts/configure-bot.sh
 ---
 
 ## 🔄 更新日志
+
+### v4.0.6 (2026-03-17) - 电商 Seedance 提示词技能 🆕
+
+**核心功能**:
+- ✅ 新增电商 Seedance 提示词生成器 (ecommerce-seedance.js)
+- ✅ 支持 6 种电商视频类型提示词生成
+- ✅ 完整电商提示词模板库
+- ✅ 专业电商视频提示词文档
+
+**支持的电商视频类型**:
+| 类型 | 说明 | 适用场景 |
+|------|------|----------|
+| product-showcase | 商品展示视频 | 新品发布、产品推广 |
+| tutorial | 使用教程视频 | 教学、功能演示 |
+| brand-story | 品牌宣传视频 | 品牌故事、企业形象 |
+| live-commerce | 直播带货视频 | 直播预热、切片 |
+| promotion | 促销活动视频 | 节日促销、店庆 |
+| testimonial | 用户评价视频 | 口碑营销、社交证明 |
+
+**使用方式**:
+```bash
+# 生成商品展示提示词
+node ecommerce-seedance.js --type product-showcase \
+  --product "智能手表" \
+  --duration 30 \
+  --style "科技感" \
+  --selling-points "心率监测，7 天续航，防水"
+
+# 生成直播带货提示词
+node ecommerce-seedance.js --type live-commerce \
+  --product "美妆大礼包" \
+  --discount "5 折，满 299 减 100" \
+  --live-time "11 月 11 日 20:00"
+
+# 在飞书对话中使用
+Seedance 虾，帮我生成一个智能手表的商品展示视频提示词
+- 时长：30 秒
+- 风格：科技感
+- 卖点：心率监测、7 天续航、防水
+```
+
+**文档**:
+- docs/ECOMMERCE_SEEDANCE.md - 电商 Seedance 提示词完整指南
+- 包含 6 种视频类型的详细模板
+- 包含使用示例和最佳实践
 
 ### v4.0.5 (2026-03-17) - 智能配置版 🆕
 
