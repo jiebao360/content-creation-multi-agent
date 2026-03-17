@@ -1,8 +1,8 @@
-# 🦐 内容生成多 Agent 系统 v4.0.2
+# 🦐 内容生成多 Agent 系统 v4.0.3
 
-> 商用级内容生成全流程系统 - 优化安装路径版本
+> 商用级内容生成全流程系统 - 修复消息无响应问题
 
-**版本**: v4.0.2 (路径优化版)  
+**版本**: v4.0.3 (消息监听修复版)  
 **创建时间**: 2026-03-17  
 **作者**: OpenClaw 来合火  
 **GitHub**: https://github.com/jiebao360/content-creation-multi-agent  
@@ -320,6 +320,31 @@ bash scripts/configure-bot.sh
 ---
 
 ## 🔄 更新日志
+
+### v4.0.3 (2026-03-17) - 消息监听修复版 🆕
+
+**核心修复**:
+- ✅ 修复飞书机器人配置后消息无响应问题
+- ✅ 添加完整的消息监听和路由系统
+- ✅ 优化 Agent 匹配逻辑，提高识别准确率
+- ✅ 添加消息处理日志，便于问题排查
+
+**新增功能**:
+- ✅ 新增诊断工具 (`scripts/diagnose.sh`) - 一键排查配置问题
+- ✅ 新增消息监听器 (`scripts/start-listener.sh`) - 独立监听服务
+- ✅ 新增飞书配置指南 (`docs/FEISHU_SETUP.md`) - 完整配置流程
+- ✅ 新增问题排查文档 (`docs/TROUBLESHOOTING.md`) - 常见问题解决方案
+
+**配置优化**:
+- ✅ 配置文件集中管理 (`~/.openclaw/workspace-main/bot-configs/`)
+- ✅ 支持多机器人配置
+- ✅ 配置与代码分离
+- ✅ 自动生成配置文档
+
+**文档完善**:
+- ✅ 更新 README.md 添加问题排查章节
+- ✅ 更新 SKILL.md 添加故障排查说明
+- ✅ 新增 OPTIMIZATION_SUMMARY.md 记录优化内容
 
 ### v4.0.2 (2026-03-17) - 路径优化版
 - ✅ 修复 Windows 安装路径硬编码问题

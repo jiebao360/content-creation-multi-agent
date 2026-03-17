@@ -18,6 +18,8 @@ output/
 !README.md
 !SKILL.md
 !OPTIMIZATION_SUMMARY.md
+!OPTIMIZATION_SUMMARY_v*.md
+!docs/
 
 # 日志
 logs/
