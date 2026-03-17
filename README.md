@@ -1,8 +1,8 @@
-# 🦐 内容生成多 Agent 系统 v4.0.3
+# 🦐 内容生成多 Agent 系统 v4.0.4
 
-> 商用级内容生成全流程系统 - 修复消息无响应问题
+> 商用级内容生成全流程系统 - 支持多飞书机器人配置
 
-**版本**: v4.0.3 (消息监听修复版)  
+**版本**: v4.0.4 (多机器人支持版)  
 **创建时间**: 2026-03-17  
 **作者**: OpenClaw 来合火  
 **GitHub**: https://github.com/jiebao360/content-creation-multi-agent  
@@ -320,6 +320,35 @@ bash scripts/configure-bot.sh
 ---
 
 ## 🔄 更新日志
+
+### v4.0.4 (2026-03-17) - 多机器人支持版 🆕
+
+**核心功能**:
+- ✅ 支持配置多个飞书机器人，每个对应不同 Agent
+- ✅ 新增多机器人配置脚本 (`scripts/configure-multi-bot.sh`)
+- ✅ 新增多机器人配置指南 (`docs/MULTI_BOT_SETUP.md`)
+- ✅ 支持预设模板快速配置
+- ✅ 支持自定义配置模式
+
+**使用场景**:
+- 内容创作机器人 → Content Agent
+- 朋友圈助手 → Moments Agent
+- 视频导演 → Video Director + Seedance Director
+- 图片生成 → Image Generator
+- 第二大脑笔记虾 → Note Agent
+
+**配置方式**:
+```bash
+# 使用预设模板快速配置
+bash scripts/configure-multi-bot.sh
+
+# 或手动配置每个机器人
+bash scripts/configure-bot.sh
+```
+
+**文档**:
+- docs/MULTI_BOT_SETUP.md - 完整的飞书多机器人配置指南
+- 包含飞书应用创建、权限配置、事件订阅全流程
 
 ### v4.0.3 (2026-03-17) - 消息监听修复版 🆕
 
