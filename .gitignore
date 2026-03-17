@@ -20,6 +20,7 @@ output/
 !OPTIMIZATION_SUMMARY.md
 !OPTIMIZATION_SUMMARY_v*.md
 !GITHUB_RELEASE_v*.md
+!QUICK_START.md
 !docs/
 
 # 日志
