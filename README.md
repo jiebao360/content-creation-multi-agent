@@ -1,8 +1,8 @@
-# 🦐 内容生成多 Agent 系统 v4.0.6
+# 🦐 内容生成多 Agent 系统 v4.0.7
 
-> 商用级内容生成全流程系统 - 电商 Seedance 提示词技能
+> 商用级内容生成全流程系统 - 6 个专业化 Agent
 
-**版本**: v4.0.6 (电商提示词版)  
+**版本**: v4.0.7 (6Agent 完整版)  
 **创建时间**: 2026-03-17  
 **作者**: OpenClaw 来合火  
 **GitHub**: https://github.com/jiebao360/content-creation-multi-agent  
@@ -39,16 +39,16 @@ C:\Users\<你的用户名>\.openclaw\workspace-main\skills\content-creation-mult
 
 ---
 
-## 🎭 6 个专业化 Agent
+## 🎭 6 个专业化 Agent（核心阵容）
 
-| Agent | 职责 | 默认模型 | 推荐技能 |
+| Agent | 职责 | 核心能力 | 默认模型 |
 |-------|------|----------|----------|
-| **Note** | 第二大脑笔记虾（知识管理、素材提供） | doubao-pro | web-search, file-reading, knowledge-management |
-| **Content** | 文章写作、报告、文案 | doubao | article-writer, ai-daily-news |
-| **Moments** | 朋友圈、社交媒体 | doubao | copywriting, social-media |
-| **Video Director** | 视频脚本、分镜 | doubao-pro | video-script, storyboard |
-| **Image Generator** | 图片搜索、豆包生成 | doubao-pro | image-search, doubao-prompt, image-generation |
-| **Seedance Director** | Seedance 提示词 | doubao-pro | seedance-prompt, video-direction, prompt-engineering |
+| **第二大脑笔记虾** 🧠 | 知识管理 + 素材提供 | 浏览器搜索、文件读取、素材提供 | doubao-pro |
+| **朋友圈创作虾** 📱 | 朋友圈文案创作 | 文案创作、配图建议、发布时间 | doubao |
+| **电商视频导演虾** 🎬 | 电商视频脚本 | 脚本编写、分镜设计、拍摄建议 | doubao-pro |
+| **通用内容创作虾** ✍️ | 通用内容创作 | 多文体写作、内容优化、风格调整 | doubao |
+| **图片素材生成虾** 🎨 | 图片搜索 + 豆包生成 | 搜索 5 张 +5 个提示词 +5 张图片 | doubao-pro |
+| **电商 Seedance 导演虾** 🎯 | Seedance 提示词 | Seedance 提示词、镜头语言、光影效果 | doubao-pro |
 
 ---
 
@@ -320,6 +320,29 @@ bash scripts/configure-bot.sh
 ---
 
 ## 🔄 更新日志
+
+### v4.0.7 (2026-03-17) - 6 个专业化 Agent 核心阵容 🆕
+
+**核心 Agent 恢复**:
+- ✅ 第二大脑笔记虾 🧠 - 知识管理 + 素材提供（浏览器搜索、文件读取、素材提供）
+- ✅ 朋友圈创作虾 📱 - 朋友圈文案创作（文案创作、配图建议、发布时间）
+- ✅ 电商视频导演虾 🎬 - 电商视频脚本（脚本编写、分镜设计、拍摄建议）
+- ✅ 通用内容创作虾 ✍️ - 通用内容创作（多文体写作、内容优化、风格调整）
+- ✅ 图片素材生成虾 🎨 - 图片搜索 + 豆包生成（搜索 5 张 +5 个提示词 +5 张图片）
+- ✅ 电商 Seedance 导演虾 🎯 - Seedance 提示词（Seedance 提示词、镜头语言、光影效果）
+
+**配置优化**:
+- ✅ 统一使用中文 Agent 名称
+- ✅ 明确每个 Agent 的核心能力
+- ✅ 优化 Agent 匹配规则
+- ✅ 完善使用示例
+
+**使用方式**:
+```bash
+bash scripts/configure-bot.sh
+# 输入机器人名称，自动匹配对应 Agent
+# 如："来合火 1 号第二大脑笔记虾" → 自动匹配 第二大脑笔记虾
+```
 
 ### v4.0.6 (2026-03-17) - 电商 Seedance 提示词技能 🆕
 
